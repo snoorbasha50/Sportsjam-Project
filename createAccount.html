@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     .container{
+        height:30px;
+        background-color: black;
+        display:flex;
+        width:100%;
+        padding-left: 55%;
+        
+        
+    }
+    .container>div{
+        color:white;
+        font-size: 14px;
+        padding-left:20px;
+        padding-top: 5px;
+    }
+    .container>div>a{
+        color:white;
+        text-decoration:none;
+    }
+    #cor{
+        height:100px;
+        border:1px solid white;
+        display:flex;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        
+    }
+    #search{
+        height:30px;
+        width:500px;
+        border:1px solid black;
+        color:black;
+        background-color: white;
+        margin-top: 20px;
+        padding-left: 10px;
+        margin-left: 13%;
+    }
+    #cart{
+       padding-left: 15%;
+      
+       
+    }
+    #cart>img{
+        height:100px;
+        width:150px;
+    }
+    #shopping{
+        padding-top:45px;
+        font-size:20px;
+    }
+       *{
+        margin:0px;
+        padding:0px;
+    } 
+    ul{
+        list-style-type: none;
+    }
+    ul li{
+        float:left;
+        width:150px;
+        height:30px;
+        font-size: 15px;
+        text-align: center;
+        line-height: 30px;
+    }
+    ul li a{
+        text-decoration: none;
+        color:black;
+        display:block;
+    }
+    ul li a:hover{
+        background-color: black;
+        color: white;
+    }
+    ul li ul li{
+        display:none;
+    }
+    ul li:hover ul li{
+        display:block;
+        color:black;
+    }
+    #box{
+        display:flex;
+        padding: 20px;
+    }
+    h1{
+        text-align: center;
+    }
+    #box2{
+        display:flex;
+        justify-content: space-evenly;
+        padding:20px;
+        
+    }
+    #box2>div>p{
+        margin-left: 80px;
+    }
+    #box2>div>h3{
+        margin-left: 80px;
+    }
+    #box3{
+        display:flex;
+    
+        
+    }
+    #box3>div{
+     padding:50px;
+    }
+    #box3>div>h4{
+        padding-left: 100px;
+    }
+    h3{
+        text-align: center;
+    }
+    #view{
+        height:40px;
+        width:200px;
+        border:1px solid black;
+        margin:auto;
+        text-align: center;
+        padding-top: 5px;
+    }
+    #con{
+        color:blue;
+        z-index: +1;
+        
+        
+    }
+    .heading{
+        height:30px;
+        
+        justify-content: space-evenly;
+        display:flex;
+        padding: 10px;
+        width:100%;
+    }
+    .heading>div{
+        color:orange;
+        font-size: 20px;
+        justify-content: space-evenly;
+
+    }
+    .user{
+        display:flex;
+        
+        height:480px;
+    }
+    #para{
+        width:42%;
+        border:1px solid white;
+        padding-left: 8%;
+        font-size: 18px;
+        margin-top: 2%;
+        height:400px;
+        
+    }
+    #para>p{
+        padding:5px;
+    }
+    #registration{
+        width:50%;
+        border:1px solid white;
+        margin-top: 2%;
+        font-size: 18px;
+        padding-left:10%;
+        height:440px;
+        
+    }
+    #form>div{
+        height:30px;
+        width:150px;
+        
+        text-decoration: none;
+        color:white;
+        background-color:orange;
+        padding-left: 60px;
+        
+
+    }
+    input[type="submit"]{
+        background-color:white;
+        width:200px;
+    }
+    form label{
+        margin-top:20px;
+        font-size: 18px;
+        display:flex;
+    }
+    form input{
+        border:1px solid grey;
+        padding:5px;
+    }
+    form{
+        width:300px;
+        margin-left: 20px;
+    }
+    #footer{
+        
+         display:flex; 
+        height:auto;
+        
+        justify-content: space-evenly;
+         padding:10px 100px 10px 100px; 
+        background-color: rgb(199, 184, 166);
+        box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+
+
+    }
+    
+    #footer>div>img{
+        width:100px;
+        height:100px; 
+    }
+    #payment{
+        display:flex;
+        height:300px;
+        
+        background-color: black;
+    }
+    #payment>div{
+        color:white;
+        width:23%;
+        
+        padding-left: 15px;
+
+    }
+    #payment>div>p{
+        font-size: 13px;
+    }
+    
+   
+    
+</style>
+<body>
+    <div class="container">
+        <div onclick="contact()">Call Us:+91-9555461555</button></div>
+        <div id="sign"><a target="_blank" href="signin.html">Sign in</a></div>
+        <div><a target="_blank" href="createAccount.html">Create Account</a></div>
+        <div><a target="_blank" href="signin.html">Wishlist</a></div>
+        
+        </div>
+        
+  
+    <div class="heading">
+        <div>NEW USER</div>
+        <div>REGISTRATION</div>
+    </div>
+    <div class="user">
+        <div id="para">
+            <p>At Sportsjam.in, buy your favourite brand and sportsgear at great prices. Don't forget to use our welcome gift vouchers (worth Rs.2000)* for more savings!</p>
+            <p>Register online and and enjoy the following benefits:</p>
+            
+                <p>Get Discount Vouchers, Special Promotions & Offers</p>
+                <p>Checkout faster while making your purchases</p>
+                <p>View your Order History and track your Order Status</p>
+                <p>Make changes to your account information or password</p>
+            
+        </div>
+        
+            <div id="registration">
+            <form id="form">
+            <label>First Name</label>
+            <input type="text" placeholder="" id="firstname"><br>
+            <label>Mobile No</label>
+            <input type="Number" placeholder="number"  id="number"><br>
+            <label>Email</label>
+            <input type="text"  placeholder="email"  id="email"><br>
+            <label>Password</label>
+            <input type="password" placeholder="password" id="password"><br>
+            <label>Confirm <br>Password</label>
+            <input type="password"  placeholder="confirm password" id="confirm"><br>
+            <br>
+            <div id="submit"><a target="_blank" href="mainpage.html">Submit</a></div>
+            </form>
+        </div>
+        
+    
+</body>
+</html>
+  <script>
+            document.querySelector("#form").addEventListener("submit", myFormSubmit);
+          
+            var signupArr = JSON.parse(localStorage.getItem("signUpDetails")) || [];
+            function myFormSubmit() {
+              event.preventDefault();
+              var signupObj = {
+                email: document.querySelector("#email").value,
+                user: document.querySelector("#user").value,
+                pass: document.querySelector("#pass").value,
+              };
+              
+              signupArr.push(signupObj);
+              console.log(signupArr);
+              localStorage.setItem("signUpDetails", JSON.stringify(signupArr));
+          
+              document
+                .querySelector("input[type='submit']")
+                .addEventListener("click", function () {
+                  window.location.href = "mainpage.html";
+                });
+                document.querySelector("#submit").addEventListener("click",function(){
+                    window.location.href="mainpage.html"
+                })
+    
+                
+            }
+          </script>
+         
+        

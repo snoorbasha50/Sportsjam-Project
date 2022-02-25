@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #face{
+        display:flex;
+    }
+    #face>img{
+        height:30px;
+        width:45%;
+        justify-content: space-between;
+    }
+    form{
+       height:270px;
+       width:450px;
+       justify-content: center;
+       margin:auto;
+       padding-left: 20px;
+       box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    }
+    input[type=text],input[type=password]{
+        width:60%;
+        margin:8px 0px 0px 10px;
+        padding:12px 20px 0px 10px;
+        
+    }
+    input[type=submit]{
+        background-color: rgb(233, 163, 33);
+        width:90%;
+        padding:5px;
+        border:none;
+        cursor:pointer;
+    }
+    body{
+        background-color: rgb(204, 184, 184);
+    }
+   
+
+</style>
+<body>
+    <form id="form">
+    <label>E-mail Id</label>
+    <input type="text" placeholder=""  id="user"><br>
+    <label>Password</label>
+    <input type="password" placeholder=""  id="pass"><br>
+    <input type="checkbox"/> Remember me<br>
+    <div id="login"><a href="mainpage.html">Login</a></div>
+    <!-- <a target="_blank" href="mainpage.html">Login</a> -->
+    <label>
+        <p>Forget<a href="#" >Password</a>
+    </label>
+    <label>
+        <p>No account?<a href="createAccount.html" >Sign up</a>
+    </label>
+    <div id="face">
+        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQsNTms72LObDZiTqGyUHpMThHFa8Kp1QqIMVf_L0bdhUHRfmDU" alt="">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1QdyThjUf0OFUowW9xPT8QoouitliMP0TAg4TlzLpZFWZLF5J" alt="">
+
+    </div>
+    </form>
+    
+</body>
+</html>
+<script>
+    document.getElementById("login").addEventListener("click",function(){
+        window.location.href="mainpage.html"
+    })
+
+    // var regdUsers = JSON.parse(localStorage.getItem("signUpDetails"));
+    // console.log(regdUsers);
+  
+    // document.querySelector("#form").addEventListener("submit", formSubmit);
+  
+    // var form = document.querySelector("#form");
+  
+    // //console.log(form.user.value);
+    // // form.id.value
+    // function formSubmit(event) {
+    //   event.preventDefault();
+  
+    //   var user = form.user.value;
+    //   var pass = form.pass.value;
+    //   console.log(user, pass);
+  
+    //   var flag= false
+    //   for (var i = 0; i < regdUsers.length; i++) {
+    //     if (regdUsers[i].user == user && regdUsers[i].pass == pass) {
+    //       flag=true
+    //     } else {
+          
+    //     }
+    //   }
+    // }
+  
+    
+  
+    // whenever you want to store multiple objects
+  </script>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        height:60px;
+        background-color: black;
+        display:flex;
+        padding-left: 65%;
+    }
+    .container>div{
+        color:white;
+        font-size: 10px;
+        padding:12px;
+    }
+   
+
+</style>
+<body>
+    <div class="container">
+    <div onclick="contact()">Call Us:+91-9555461555</button></div>
+    <div id="sign">Sign in</div>
+    <div><button onclick="createaccount()">Create Account</button></div>
+    <div><button onclick="wishlist()">Wishlist</button></div>
+    </div>
+    
+</body>
+</html>
+<script>
+    document.querySelector("#sign").addEventListener("click",function(){
+        window.location.href="signin.html"
+    });
+
+    
+</script>

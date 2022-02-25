@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #full{
+        display:flex;
+    }
+    .upper{
+        display:flex;
+        
+        height:35px;
+        justify-content: space-evenly;
+
+    }
+    #gotocart{
+        height:30px;
+        width:200px;
+        
+    }
+    #sortprice{
+        height:30px;
+        width:200px;
+    }
+    #brand{
+        height:30px;
+        width:300px;
+    }
+    .line>img{
+        height:400px;
+        width:340px;
+        
+
+    }
+    #price{
+        display: flex;
+        width:340px;
+        height:40px;
+       
+    }
+    #price>div{
+        
+        justify-content:space-evenly;
+        height:30px;
+        width:100px;
+       
+       
+        padding-left: 2px;
+        
+
+    }
+    #color{
+        color:rgb(248, 169, 23);
+    }
+    .product{
+        height:500px;
+        width:350px;
+        margin:20px;
+        
+    }
+    .product:hover{
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        
+    }
+
+
+
+    
+</style>
+<body>
+    
+    <div class="upper">
+        <button  id="gotocart">Add Cart</button>
+        <select id="sortprice" onchange="sortbyprice()">
+        <option value="">Sort by price</option>
+        <option value="Low">Low to High</option>
+        <option value="High">High to Low</option>
+       
+        </select>
+        <select id="brand" onchange="brand()">
+            <option value="">Sort by Brand</option>
+            <option value="Zara">Zara</option>
+            
+            <option value="addidas">addidas</option>
+            <option value="Nike">Nike</option>
+            <option value="Prada">Prada</option>
+            <option value="Gucci">Gucci</option>
+            <option value="Uniqlo">Uniqlo</option>
+            <option value="Versaci">Versaci</option>
+           
+        </select>
+
+    </div>
+    <div id="full">
+    <div class="product">
+    <div class="line">
+        <img src="https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/AS1201A275400.jpg" alt="">
+        <p>Asics FLEXC Mens Running Shoes (Peacoat/Black)</p>
+        <div id="price">
+            <div><strike>4435</strike></div>
+            <div>₹1234</div>
+            <div id="color">50% off</div>
+            <div><button>Add to cart</button></div>
+
+        </div>
+    </div>
+    </div>
+    <div class="product">
+        <div class="line">
+            <img src="https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/NK852518-001.jpg" alt="">
+            <p>Asics FLEXC Mens Running Shoes (Peacoat/Black)</p>
+            <div id="price">
+                <div><strike>3835</strike></div>
+                <div>₹1764</div>
+                <div id="color">30% off</div>
+                <div><button>Add to cart</button></div>
+    
+            </div>
+        </div>
+        </div>
+        <div class="product">
+            <div class="line">
+                <img src="https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/NK844441-070.jpg" alt="">
+                <p>Asics FLEXC Mens Running Shoes (Peacoat/Black)</p>
+                <div id="price">
+                    <div><strike>4905</strike></div>
+                    <div>₹1234</div>
+                    <div id="color">30% off</div>
+                    <div><button>Add to cart</button></div>
+        
+                </div>
+            </div>
+            </div>
+            <div class="product">
+                <div class="line">
+                    <img src="https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/NK844436-417.jpg" alt="">
+                    <p>Asics FLEXC Mens Running Shoes (Peacoat/Black)</p>
+                    <div id="price">
+                        <div><strike>1335</strike></div>
+                        <div>₹1234</div>
+                        <div id="color">50% off</div>
+                        <div><button>Add to cart</button></div>
+            
+                    </div>
+                </div>
+                </div>
+    </div>
+    <div id="full">
+        <div class="product">
+        <div class="line">
+            <img src="https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/ADFSBB5875.jpg" alt="">
+            <p>Asics FLEXC Mens Running Shoes (Peacoat/Black)</p>
+            <div id="price">
+                <div><strike>9875</strike></div>
+                <div>₹3334</div>
+                <div id="color">50% off</div>
+                <div><button>Add to cart</button></div>
+    
+            </div>
+        </div>
+        </div>
+        <div class="product">
+            <div class="line">
+                <img src="https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/ADAQ4299.jpg" alt="">
+                <p>Asics FLEXC Mens Running Shoes (Peacoat/Black)</p>
+                <div id="price">
+                    <div><strike>4435</strike></div>
+                    <div>₹1234</div>
+                    <div id="color">50% off</div>
+                    <div><button>Add to cart</button></div>
+        
+                </div>
+            </div>
+            </div>
+            <div class="product">
+                <div class="line">
+                    <img src="https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/ADFSAF5146.jpg" alt="">
+                    <p>Asics FLEXC Mens Running Shoes (Peacoat/Black)</p>
+                    <div id="price">
+                        <div><strike>4905</strike></div>
+                        <div>₹1234</div>
+                        <div id="color">50% off</div>
+                        <div><button>Add to cart</button></div>
+            
+                    </div>
+                </div>
+                </div>
+                <div class="product">
+                    <div class="line">
+                        <img src="https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/ADFSS78178.jpg" alt="">
+                        <p>Asics FLEXC Mens Running Shoes (Peacoat/Black)</p>
+                        <div id="price">
+                            <div><strike>4435</strike></div>
+                            <div>₹1234</div>
+                            <div id="color">60% off</div>
+                            <div><button>Add to cart</button></div>
+                
+                        </div>
+                    </div>
+                    </div>
+        </div>
+        <div id="full">
+            <div class="product">
+            <div class="line">
+                <img src="https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/ASRNT718N9590.jpg" alt="">
+                <p>Asics FLEXC Mens Running Shoes (Peacoat/Black)</p>
+                <div id="price">
+                    <div><strike>9875</strike></div>
+                    <div>₹1304</div>
+                    <div id="color">50% off</div>
+                    <div><button>Add to cart</button></div>
+        
+                </div>
+            </div>
+            </div>
+            <div class="product">
+                <div class="line">
+                    <img src="https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/ADFSAF4852.jpg" alt="">
+                    <p>Asics FLEXC Mens Running Shoes (Peacoat/Black)</p>
+                    <div id="price">
+                        <div><strike>435</strike></div>
+                        <div>₹134</div>
+                        <div id="color">40% off</div>
+                        <div><button>Add to cart</button></div>
+            
+                    </div>
+                </div>
+                </div>
+                <div class="product">
+                    <div class="line">
+                        <img src="https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/ADFSS75606.jpg" alt="">
+                        <p>Asics FLEXC Mens Running Shoes (Peacoat/Black)</p>
+                        <div id="price">
+                            <div><strike>4905</strike></div>
+                            <div>₹1234</div>
+                            <div id="color">50% off</div>
+                            <div><button>Add to cart</button></div>
+                
+                        </div>
+                    </div>
+                    </div>
+                    <div class="product">
+                        <div class="line">
+                            <img src="https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/ADFSS42137.jpg" alt="">
+                            <p>Asics FLEXC Mens Running Shoes (Peacoat/Black)</p>
+                            <div id="price">
+                                <div><strike>4435</strike></div>
+                                <div>₹1234</div>
+                                <div id="color">50% off</div>
+                                <div><button>Add to cart</button></div>
+                    
+                            </div>
+                        </div>
+                        </div>
+            </div>
+            <div id="full">
+                <div class="product">
+                <div class="line">
+                    <img src="https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/ADFSS77090.jpg" alt="">
+                    <p>Asics FLEXC Mens Running Shoes (Peacoat/Black)</p>
+                    <div id="price">
+                        <div><strike>4435</strike></div>
+                        <div>₹1234</div>
+                        <div id="color">50% off</div>
+                        <div><button>Add to cart</button></div>
+            
+                    </div>
+                </div>
+                </div>
+                <div class="product">
+                    <div class="line">
+                        <img src="https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/AS1201A275400.jpg" alt="">
+                        <p>Asics FLEXC Mens Running Shoes (Peacoat/Black)</p>
+                        <div id="price">
+                            <div><strike>4435</strike></div>
+                            <div>₹1234</div>
+                            <div id="color">50% off</div>
+                            <div><button>Add to cart</button></div>
+                
+                        </div>
+                    </div>
+                    </div>
+                    <div class="product">
+                        <div class="line">
+                            <img src="https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/ADFSBA8289.jpg" alt="">
+                            <p>Asics FLEXC Mens Running Shoes (Peacoat/Black)</p>
+                            <div id="price">
+                                <div><strike>4905</strike></div>
+                                <div>₹1234</div>
+                                <div id="color">50% off</div>
+                                <div><button>Add to cart</button></div>
+                    
+                            </div>
+                        </div>
+                        </div>
+                        <div class="product">
+                            <div class="line">
+                                <img src="https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/ADFSS79646.jpg" alt="">
+                                <p>Asics FLEXC Mens Running Shoes (Peacoat/Black)</p>
+                                <div id="price">
+                                    <div><strike>4435</strike></div>
+                                    <div>₹1234</div>
+                                    <div id="color">50% off</div>
+                                    <div><button>Add to cart</button></div>
+                        
+                                </div>
+                            </div>
+                            </div>
+                </div>
+                <div id="full">
+                    <div class="product">
+                    <div class="line">
+                        <img src="https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/ADFSS42139.jpg" alt="">
+                        <p>Asics FLEXC Mens Running Shoes (Peacoat/Black)</p>
+                        <div id="price">
+                            <div><strike>4435</strike></div>
+                            <div>₹1234</div>
+                            <div id="color">50% off</div>
+                            <div><button>Add to cart</button></div>
+                
+                        </div>
+                    </div>
+                    </div>
+                    <div class="product">
+                        <div class="line">
+                            <img src="https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/ADFSS74689.jpg" alt="">
+                            <p>Asics FLEXC Mens Running Shoes (Peacoat/Black)</p>
+                            <div id="price">
+                                <div><strike>4435</strike></div>
+                                <div>₹1234</div>
+                                <div id="color">50% off</div>
+                                <div><button>Add to cart</button></div>
+                    
+                            </div>
+                        </div>
+                        </div>
+                        <div class="product">
+                            <div class="line">
+                                <img src="https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/NK749891-009.jpg" alt="">
+                                <p>Asics FLEXC Mens Running Shoes (Peacoat/Black)</p>
+                                <div id="price">
+                                    <div><strike>4905</strike></div>
+                                    <div>₹1234</div>
+                                    <div id="color">50% off</div>
+                                    <div><button>Add to cart</button></div>
+                        
+                                </div>
+                            </div>
+                            </div>
+                            <div class="product">
+                                <div class="line">
+                                    <img src="https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/AS1201A275400.jpg" alt="">
+                                    <p>Asics FLEXC Mens Running Shoes (Peacoat/Black)</p>
+                                    <div id="price">
+                                        <div><strike>4435</strike></div>
+                                        <div>₹1234</div>
+                                        <div id="color">50% off</div>
+                                        <div><button>Add to cart</button></div>
+                            
+                                    </div>
+                                </div>
+                                </div>
+                    </div>
+                    <div id="full">
+                        <div class="product">
+                        <div class="line">
+                            <img src="https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/NK819237-444.jpg" alt="">
+                            <p>Asics FLEXC Mens Running Shoes (Peacoat/Black)</p>
+                            <div id="price">
+                                <div><strike>4435</strike></div>
+                                <div>₹1234</div>
+                                <div id="color">50% off</div>
+                                <div><button>Add to cart</button></div>
+                    
+                            </div>
+                        </div>
+                        </div>
+                        <div class="product">
+                            <div class="line">
+                                <img src="https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/MZP1GA161662L.jpg" alt="">
+                                <p>Asics FLEXC Mens Running Shoes (Peacoat/Black)</p>
+                                <div id="price">
+                                    <div><strike>4435</strike></div>
+                                    <div>₹1234</div>
+                                    <div id="color">50% off</div>
+                                    <div><button>Add to cart</button></div>
+                        
+                                </div>
+                            </div>
+                            </div>
+                            <div class="product">
+                                <div class="line">
+                                    <img src="https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/ADFSAF4658.jpg" alt="">
+                                    <p>Asics FLEXC Mens Running Shoes (Peacoat/Black)</p>
+                                    <div id="price">
+                                        <div><strike>4905</strike></div>
+                                        <div>₹1234</div>
+                                        <div id="color">50% off</div>
+                                        <div><button>Add to cart</button></div>
+                            
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="product">
+                                    <div class="line">
+                                        <img src="https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/MZP1GA162461L.jpg" alt="">
+                                        <p>Asics FLEXC Mens Running Shoes (Peacoat/Black)</p>
+                                        <div id="price">
+                                            <div><strike>4435</strike></div>
+                                            <div>₹1234</div>
+                                            <div id="color">50% off</div>
+                                            <div><button>Add to cart</button></div>
+                                
+                                        </div>
+                                    </div>
+                                    </div>
+                        </div>
+    
+</body>
+</html>
+<script>
+    // document.querySelector("#gotocart").addEventListener("click",gotocart);
+    //  var womensdata=JSON.parse(localStorage.getItem("womensdata"))||[];
+    //  var cartitems=JSON.parse(localStorage.getItem("cartitems"))||[];
+  
+   // sortPrice(womensdata);
+    // display(womendata);
+    // display(filterlist)
+   // sortprice(select);
+   // function sortbyprice(){
+   //     window.location.href="cart.html";
+   // }
+     function sortbyprice(){
+         var sort=document.querySelector("#sortprice").value;
+         if(sort==="Low"){
+             console.log(sort);
+             full.sort(function(a,b){
+                 return a.price-b.price;
+             });
+         }
+        else if(sort==="High"){
+             console.log(sort);
+              full.sort(function(a,b){
+                  return b.price-a.price;
+              });
+         }
+         console.log(full);
+         //display(womensdata);
+       //   sortprice(womensdata);
+     }
+    
+     
+
+     
+
+     
